@@ -1,0 +1,50 @@
+{
+    "new" : "New",
+    "search": "Search",
+    "export": "Export",
+    "validate": "Validate",
+    "from-to": "Elements from {first} to {last} (total {totalRecords})",
+    "search": "Seach...",
+    "delete": "Delete",
+
+
+    "purchase": "Purchase",
+    "purchaseTabPan": "Purchase",
+    "purchaseHeader": "Liste des purchases",
+    "purchaseReference": "Reference",
+    "purchasePurchaseDate": "Purchase date",
+    "purchaseTotal": "Total",
+    "purchaseDescription": "Description",
+    "purchaseClient": "Client",
+    "purchasePurchaseItems": "Purchase items",
+    "Purchase items": "Purchase items",
+
+    "client": "Client",
+    "clientTabPan": "Client",
+    "clientHeader": "Liste des clients",
+    "clientFullName": "Full name",
+    "clientEmail": "Email",
+    "clientClientCategory": "Client category",
+
+    "purchaseItem": "PurchaseItem",
+    "purchaseItemTabPan": "Purchase item",
+    "purchaseItemHeader": "Liste des purchase items",
+    "purchaseItemProduct": "Product",
+    "purchaseItemPrice": "Price",
+    "purchaseItemQuantity": "Quantity",
+    "purchaseItemPurchase": "Purchase",
+
+    "clientCategory": "ClientCategory",
+    "clientCategoryTabPan": "Client category",
+    "clientCategoryHeader": "Liste des client categorys",
+    "clientCategoryReference": "Reference",
+    "clientCategoryCode": "Code",
+
+    "product": "Product",
+    "productTabPan": "Product",
+    "productHeader": "Liste des products",
+    "productCode": "Code",
+    "productReference": "Reference"
+}
+
+
