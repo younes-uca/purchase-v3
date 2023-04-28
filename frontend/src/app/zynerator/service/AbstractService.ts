@@ -6,6 +6,9 @@ import {BaseCriteria} from 'src/app/zynerator/criteria/BaseCriteria.model';
 import {PaginatedList} from 'src/app/zynerator/dto/PaginatedList.model';
 import {MenuItem} from 'primeng/api';
 import {FileTempDto} from 'src/app/zynerator/dto/FileTempDto.model';
+import * as moment from "moment/moment";
+import {Environment} from "@angular/cli/lib/config/workspace-schema";
+import {environment} from "../../../environments/environment";
 
 
 export abstract class AbstractService<DTO extends BaseDto, CRITERIA extends BaseCriteria> {
@@ -99,6 +102,18 @@ export abstract class AbstractService<DTO extends BaseDto, CRITERIA extends Base
     public uploadMultiple(formData: FormData, i: number) {
         this.httpClient.post<FileTempDto[]>(this.API + 'upload-multiple', formData).subscribe(data=> this.fileTempDtos[i] = data);
 
+    }
+
+
+
+    public  format(myDate: Date):Date  {
+        if (myDate != null){
+            let newdate = new Date(myDate);
+            let formattedDate = moment(newdate).format(environment.dateFormatEdit);
+            console.log(formattedDate);
+            myDate = new Date(formattedDate);
+        }
+        return myDate;
     }
 
     public get items(): Array<DTO> {

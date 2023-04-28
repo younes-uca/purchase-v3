@@ -33,4 +33,5 @@ export class PurchaseService extends AbstractService<PurchaseDto, PurchaseCriter
     public constrcutCriteria(): PurchaseCriteria {
         return new PurchaseCriteria();
     }
+
 }

@@ -41,6 +41,7 @@ export class AbstractEditController<DTO extends BaseDto, CRITERIA extends BaseCr
 
     public edit(): void {
         this.submitted = true;
+        this.prepareEdit();
         this.validateForm();
         if (this.errorMessages.length === 0) {
             this.editWithShowOption(false);
@@ -66,6 +67,9 @@ export class AbstractEditController<DTO extends BaseDto, CRITERIA extends BaseCr
     }
 
 
+    public prepareEdit() {
+
+    }
     public uploadOne(event, i: number): void{
         this.file = event.files[0];
         console.log(event.files[0]);

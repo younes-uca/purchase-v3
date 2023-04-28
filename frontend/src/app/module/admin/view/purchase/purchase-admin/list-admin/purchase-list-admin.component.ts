@@ -16,6 +16,7 @@ import {ClientDto} from 'src/app/controller/model/Client.model';
 import { MessageService, ConfirmationService } from 'primeng/api';
 import { AuthService } from 'src/app/zynerator/security/Auth.service';
 import { ExportService } from 'src/app/zynerator/util/Export.service';
+import {DateUtils} from "../../../../../../zynerator/util/DateUtils";
 
 @Component({
   selector: 'app-purchase-list-admin',
@@ -71,6 +72,9 @@ export class PurchaseListAdminComponent extends AbstractListController<PurchaseD
         }
 	}
 
+    public prepareEdit() {
+        //this.item.purchaseDate = DateUtils.format(this.item.purchaseDate);
+    }
    public prepareColumnExport() : void {
         this.exportData = this.items.map(e => {
             return {

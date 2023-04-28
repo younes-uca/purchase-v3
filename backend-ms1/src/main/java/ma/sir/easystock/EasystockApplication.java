@@ -57,7 +57,7 @@ public class EasystockApplication {
     @Bean
     public CommandLineRunner demo(UserService userService, RoleService roleService) {
     return (args) -> {
-        if(true){
+        if(false){
 
             createClient();
             createClientCategory();
