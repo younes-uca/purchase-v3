@@ -1,3 +1,6 @@
+import * as moment from "moment";
+
+
 export class DateUtils {
     public static pad(number) {
         if (number < 10) {
@@ -18,6 +21,7 @@ export class DateUtils {
     public static toDate(date: any): Date {
         return new Date(this.toString(date).split('T')[0]);
     }
+
 
 }
 

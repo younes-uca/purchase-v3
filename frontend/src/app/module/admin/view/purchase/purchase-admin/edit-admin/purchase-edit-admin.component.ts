@@ -21,6 +21,7 @@ import {PurchaseItemDto} from 'src/app/controller/model/PurchaseItem.model';
 import {PurchaseItemService} from 'src/app/controller/service/PurchaseItem.service';
 import {ClientDto} from 'src/app/controller/model/Client.model';
 import {ClientService} from 'src/app/controller/service/Client.service';
+import {DateUtils} from "../../../../../../zynerator/util/DateUtils";
 
 @Component({
   selector: 'app-purchase-edit-admin',
@@ -91,6 +92,9 @@ export class PurchaseEditAdminComponent extends AbstractEditController<PurchaseD
         });
     }
 
+    public prepareEdit() {
+        this.item.purchaseDate = this.purchaseService.format(this.item.purchaseDate);
+    }
     public editPurchaseItem(p: PurchaseItemDto) {
         this.purchaseItemsElement = {... p};
         this.activeTab = 0;

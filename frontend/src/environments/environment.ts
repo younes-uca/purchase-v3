@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   dateFormatCreate: 'dd/mm/yy',
-  dateFormatEdit: 'dd/mm/yy',
+  dateFormatEdit: 'YYYY-MM-DD HH:mm:ss',
   dateFormatView: 'dd/mm/yy',
   dateFormatList: 'dd/MM/yyyy',
   trueValue: 'Vrai',

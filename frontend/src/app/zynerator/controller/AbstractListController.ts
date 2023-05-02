@@ -60,6 +60,7 @@ export class AbstractListController<DTO extends BaseDto, CRITERIA extends BaseCr
     public async edit(dto: DTO) {
         this.service.findByIdWithAssociatedList(dto).subscribe(res => {
             this.item = res;
+            console.log(res);
             this.editDialog = true;
         });
 
@@ -241,4 +242,6 @@ export class AbstractListController<DTO extends BaseDto, CRITERIA extends BaseCr
     set totalRecords(value: number) {
         this._totalRecords = value
     }
+
+
 }
