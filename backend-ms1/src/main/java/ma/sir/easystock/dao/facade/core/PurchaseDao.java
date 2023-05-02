@@ -19,3 +19,15 @@ public interface PurchaseDao extends AbstractRepository<Purchase,Long>  {
     @Query("SELECT NEW Purchase(item.id,item.reference) FROM Purchase item")
     List<Purchase> findAllOptimized();
 }
+
+
+
+
+
+
+
+
+
+
+
+

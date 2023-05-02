@@ -10,7 +10,7 @@
 
     "purchase": "Purchase",
     "purchaseTabPan": "Purchase",
-    "purchaseHeader": "Liste des purchases",
+    "purchaseHeader": "List of purchase",
     "purchaseReference": "Reference",
     "purchasePurchaseDate": "Purchase date",
     "purchaseTotal": "Total",
@@ -21,7 +21,7 @@
 
     "client": "Client",
     "clientTabPan": "Client",
-    "clientHeader": "Liste des clients",
+    "clientHeader": "List of client",
     "clientFullName": "Full name",
     "clientEmail": "Email",
     "clientClientCategory": "Client category",
@@ -42,7 +42,7 @@
 
     "product": "Product",
     "productTabPan": "Product",
-    "productHeader": "Liste des products",
+    "productHeader": "List of product",
     "productCode": "Code",
     "productReference": "Reference"
 }

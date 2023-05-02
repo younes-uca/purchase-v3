@@ -51,7 +51,7 @@
                         </span>
                         <span class=" p-float-label mr-3 align-search-items mt-4">
                             <p-multiSelect   appendTo="body" [options]="clients" [(ngModel)]="criteria.clients" itemSize="30" [virtualScroll]="true"
-                                                  defaultLabel="{{'Client' | translate}}" id="5" optionLabel="fullName"  display="chip">
+                                                  defaultLabel="{{'purchaseClient' | translate}}" id="5" optionLabel="fullName"  display="chip">
                             </p-multiSelect>
                         </span>
                 </div>
@@ -145,9 +145,9 @@
 
                 <ng-template pTemplate="summary">
                     <p-paginator  [rows]="10" [totalRecords]="totalRecords" (onPageChange)="onPage($event)"></p-paginator>
-                    <div class="p-d-flex p-ai-center p-jc-between">
+                 <!--   <div class="p-d-flex p-ai-center p-jc-between">
                         En totale il {{items ? totalRecords == 1 ? 'y a' : 'y a' : 'y a' }} {{items ? totalRecords : 0 }} {{items ? totalRecords == 1 ? 'purchase' : 'purchases' : 0 }}.
-                    </div>
+                    </div>-->
                 </ng-template>
             </p-table>
         </div>

@@ -71,7 +71,7 @@ export class AbstractCreateController<DTO extends BaseDto, CRITERIA extends Base
         });
     }
     public uploadOne(event, i: number): void{
-        console.log(event.files[0]);
+        console.log(event.files);
         let formData = new FormData();
         formData.append('file',event.files[0]);
         this.myService.upload(formData,i);
