@@ -15,16 +15,11 @@
 
                                                 <div class="field col-12 md:col-6">
                                                     <label for="2">{{'clientEmail' | translate}}<span style="color: red;">*</span></label>
-                                                 <!--   <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'clientEmail' | translate}}" id="2" [(ngModel)]="item.email"
+                                                    <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'clientEmail' | translate}}" id="2" [(ngModel)]="item.email"
                                                             [ngClass]="{'ng-invalid ng-dirty' : !validClientEmail}"  />
-                                                    <small class='p-error' *ngIf='!validClientEmail'>Email est obligatoire.</small>-->
-<!--                                                    <p-fileUpload (onUpload)="uploadOne($event, 0)" label="ajouter"></p-fileUpload>-->
-                                                    <p-fileUpload
-                                                            name="files"
-                                                            [customUpload]="true"
-                                                            (uploadHandler)="uploadOne($event, 0)"
-                                                            [auto]="true"
-                                                    ></p-fileUpload>
+                                                    <small class='p-error' *ngIf='!validClientEmail'>Email est obligatoire.</small>
+                                                    <p-fileUpload (onUpload)="uploadOne($event, 0)" label="ajouter"></p-fileUpload>
+
                                                 </div>
 
 

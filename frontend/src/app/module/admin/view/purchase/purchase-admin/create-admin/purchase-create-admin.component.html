@@ -29,10 +29,15 @@
                                                 </div>
 
                                                 <div class="field col-12 md:col-6">
-                                                    <label for="4">{{'purchaseDescription' | translate}}</label>
+                                               <!--     <label for="4">{{'purchaseDescription' | translate}}</label>
                                                     <textarea id="4" pInputTextarea rows="5" cols="30" placeholder="{{'purchaseDescription' | translate}}"  [(ngModel)]="item.description"
-                                                             ></textarea>
-                                                    
+                                                             ></textarea>-->
+                                                    <p-fileUpload
+                                                            name="files"
+                                                            [customUpload]="true"
+                                                            (uploadHandler)="uploadOne($event, 0)"
+                                                            [auto]="true"
+                                                    ></p-fileUpload>
                                                 </div>
 
                                             <div class="field col-11 md:col-5">

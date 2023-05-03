@@ -42,9 +42,6 @@ export class ClientCreateAdminComponent extends AbstractCreateController<ClientD
 }
 
 
-
-
-
     public setValidation(value: boolean){
         this.validClientFullName = value;
         this.validClientEmail = value;

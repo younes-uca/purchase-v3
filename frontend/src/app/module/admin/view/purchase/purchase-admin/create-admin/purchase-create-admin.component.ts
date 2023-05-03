@@ -53,7 +53,10 @@ export class PurchaseCreateAdminComponent extends AbstractCreateControllerEnhanc
         this.clientService.findAll().subscribe((data) => this.clients = data);
     }
 
-
+    public save() : void {
+        this.item.description= JSON.stringify(this.fileTempDtosForOne[0]);
+        super.save();
+    }
     validatePurchaseItems() {
         this.errorMessages = new Array();
         this.validatePurchaseItemsProduct();

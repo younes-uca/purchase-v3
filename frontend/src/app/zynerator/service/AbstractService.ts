@@ -249,6 +249,9 @@ export abstract class AbstractService<DTO extends BaseDto, CRITERIA extends Base
     }
 
     get fileTempDtosForOne(): FileTempDto[] {
+        if (this._fileTempDtosForOne == null) {
+            this._fileTempDtosForOne = new Array<FileTempDto>();
+        }
         return this._fileTempDtosForOne;
     }
 
